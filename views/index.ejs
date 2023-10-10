@@ -1,0 +1,74 @@
+<!-- views/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio - <%= nombre %>
+  </title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Hola soy <%= nombre %>, Bienvenido a Mi Portafolio</h1>
+    <p>Desarrollador Web | Apasionado por la Programación</p>
+  </header>
+
+  <div class="radio-inputs">
+    <a href="/inicio" class="radio">
+      <label>        
+        <span class="name">INICIO</span>
+      </label>
+    </a>
+    <label class="radio">
+      <a href="/skills" class="radio">
+        <label>        
+          <span class="name">SKILLS</span>
+        </label>
+      </a>
+    </label>
+
+    <label class="radio">
+      <a href="/contact" class="radio">
+        <label>        
+          <span class="name">CONTACTAME</span>
+        </label>
+      </a>
+    </label>
+  </div>
+  <section id="about-me">
+    <h2>Sobre Mí</h2>
+    <p>
+      ¡Hola! Soy <%= nombre %>, un apasionado desarrollador web con experiencia en desarrollo web.
+        Mi objetivo es crear soluciones efectivas y atractivas para problemas del mundo real.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Proyectos Destacados</h2>
+    <div class="project">
+      <img src="https://img.global.news.samsung.com/co/wp-content/uploads/2018/06/02-AGWART-111-1024x683.jpg"
+        alt="Proyecto 1" width="200">
+      <h3>SisRiegAut</h3>
+      <p>Descripción del proyecto 1.</p>
+    </div>
+
+    <div class="project">
+      <img src="https://www.fondep.gob.pe/wp-content/uploads/2020/05/red-de-socentes-innovadores-maestra.jpeg"
+        alt="Proyecto 1" width="200">
+      <h3>Proyecto 2</h3>
+      <p>Descripción del proyecto 2.</p>
+    </div>
+   
+  </section>
+
+
+  <footer>
+    <p>&copy; 2023 Mi Portafolio. Todos los derechos reservados.</p>
+  </footer>
+</body>
+
+</html>
